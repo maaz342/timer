@@ -20,7 +20,7 @@ function startTimer() {
     if (totalTime <= 0) {
       clearInterval(timerInterval);
       timerDisplay.textContent = 'Time\'s up!';
-      clearInputs(); // Clear inputs when timer ends
+      clearInputs(); 
     } else {
       let hoursDisplay = Math.floor(totalTime / 3600000).toString().padStart(2, '0');
       let minutesDisplay = Math.floor((totalTime % 3600000) / 60000).toString().padStart(2, '0');
